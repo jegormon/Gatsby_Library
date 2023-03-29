@@ -19,8 +19,7 @@
   text-decoration: none;
 }
 
-.link:focus,
 .link:hover {
   background: var(--white);
-  color: var(--balck);
+  color: var(--black);
 }

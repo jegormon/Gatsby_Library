@@ -14,6 +14,10 @@ module.exports = {
         label: "Account",
         path: "/account",
       },
+      {
+        label: "Search",
+        path: "/search",
+      },
     ],
   },
   plugins: [

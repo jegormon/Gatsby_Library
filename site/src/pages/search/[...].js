@@ -3,8 +3,8 @@ import { navigate } from "gatsby";
 
 import { form, input, button } from "../../styles/search.module.css";
 
-export default function SearchCleintOnly({ params }) {
-  const query = decodeURIComponent(params["*"]);
+export default function SearchClientOnly({ params = {} }) {
+  const query = params["*"] ? decodeURIComponent(params["*"]) : "";
   const [currentQuery, setCurrentQuery] = React.useState(query);
   const [result, setResult] = React.useState(null);
   const [status, setStatus] = React.useState("IDLE");
